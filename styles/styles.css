@@ -142,9 +142,18 @@ img {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin: 8px 8px 543px 490px;
+    margin: 8px 8px 2px 490px;
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+    fill: var(--accent-color);
+}
+
+.form {
+    width: 30px;
+    height: 30px
+}
 
 /*****************logo*********************/
 
@@ -295,10 +304,10 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts:hover > .icon-one,
-.contacts:focus >.icon-one,
-.contacts:hover >.icon-two,
-.contacts:focus >.icon-two {
+.contacts:hover>.icon-one,
+.contacts:focus>.icon-one,
+.contacts:hover>.icon-two,
+.contacts:focus>.icon-two {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -543,7 +552,7 @@ img {
 }
 
 .team-soc-icons {
-    fill: currentColor ;
+    fill: currentColor;
 }
 
 
