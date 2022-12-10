@@ -26,6 +26,8 @@ html {
     --border-klient-color: #AFB1B8;
     --work-img-title-color: rgba(47, 48, 58, 80%);
     --portfolio-animation: rgba(33, 150, 243, 90%);
+    --background-color-shadov: rgba(0, 0, 0, 0.25);
+    --modal-border-color: rgba(33, 33, 33, 0.2);
 }
 
 body {
@@ -99,7 +101,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: var(--background-color-shadov);
 
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,7 +126,7 @@ img {
 
     border-radius: 4px;
     background-color: var(--title-primary-fon);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,20 +152,81 @@ img {
     fill: var(--accent-color);
 }
 
-.form {
-    width: 30px;
-    height: 30px
-}
-
 .modal-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 12px;
 }
 
+.form-modal {
+    width: 448px;
+    margin: auto;
+}
 
+.form-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
 
+.form-box label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.form-box input {
+    position: absolute;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    border: 1px solid var(--modal-border-color);
+    border-radius: 4px;
+}
+
+input .form-box-icon {
+    position: relative;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: var(--fon-logostudio);
+}
+
+textarea {
+    resize: none;
+}
+
+.button-studio:hover,
+.button-studio:focus,
+.button-studio:active {
+    background-color: var(--button-active);
+}
+
+.button-studio {
+    cursor: pointer;
+    color: var(--title-primary-fon);
+    background-color: var(--accent-color);
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    font-Family: 'Roboto', sans-serif;
+    display: inline-block;
+    min-width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 32px;
+    border: none;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*****************logo*********************/
 
 .logo {
@@ -317,7 +380,7 @@ img {
 .contacts:focus>.icon-one,
 .contacts:hover>.icon-two,
 .contacts:focus>.icon-two {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
 }
 
 /* main */
@@ -549,7 +612,7 @@ img {
 .team-card {
     width: 270px;
     height: 428px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
     border-radius: 4px;
 }
 
@@ -845,7 +908,7 @@ header {
 .button:active {
     color: var(--title-primary-fon);
     background-color: var(--accent-color);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
 }
 
 .portfolio {
@@ -866,7 +929,7 @@ header {
 
 .portfolio-elements:hover,
 .portfolio-elements:focus {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
 }
 
 .portfolio-elements:nth-last-child(-n + 3) {
