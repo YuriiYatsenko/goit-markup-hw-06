@@ -715,6 +715,7 @@ footer {
 }
 
 .e-mail-input-box {
+    display: flex;
     margin-left: auto;
 }
 
@@ -734,7 +735,6 @@ footer {
 }
 
 .submit-button {
-    display: flex;
     cursor: pointer;
     color: var(--title-primary-fon);
     background-color: var(--accent-color);
@@ -744,13 +744,14 @@ footer {
     line-height: 1.9;
     font-Family: 'Roboto', sans-serif;
     display: inline-block;
-    min-width: 216px;
+    min-width: 200px;
     height: 50px;
     border-radius: 4px;
     text-align: center;
-    padding: 10px 32px;
+    padding: 10px 28px;
     border: none;
     margin-left: 12px;
+    margin-top: 36px;
     justify-content: center;
     align-items: center;
 
@@ -772,7 +773,9 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-label {
 
+}
 
 /*      PORTFOLIO      */
 
