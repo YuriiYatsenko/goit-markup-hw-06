@@ -728,6 +728,24 @@ footer {
     text-transform: uppercase;
 }
 
+.form-box-footer {
+    width: 358px;
+    height: 50px;
+}
+
+.form-label {
+    width: 100%;
+    height: 100%;
+}
+
+.form-input {
+    width: 100%;
+    height: 100%;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
 .submit-button:hover,
 .submit-button:focus,
 .submit-button:active {
@@ -763,7 +781,6 @@ footer {
 .submit-icon {
     width: 24px;
     height: 24px;
-    margin: 13px 28px 13px 10px;
     fill: currentColor;
     align-items: center;
     justify-content: center;
@@ -771,10 +788,6 @@ footer {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-label {
-
 }
 
 /*      PORTFOLIO      */
