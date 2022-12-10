@@ -155,6 +155,13 @@ img {
     height: 30px
 }
 
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+
 
 
 /*****************logo*********************/
@@ -753,6 +760,7 @@ footer {
 }
 
 .submit-button {
+    position: relative;
     cursor: pointer;
     color: var(--title-primary-fon);
     background-color: var(--accent-color);
@@ -770,8 +778,6 @@ footer {
     border: none;
     margin-left: 12px;
     margin-top: 36px;
-    justify-content: center;
-    align-items: center;
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -779,11 +785,10 @@ footer {
 }
 
 .submit-icon {
+    position: absolute;
     width: 24px;
     height: 24px;
     fill: currentColor;
-    align-items: center;
-    justify-content: center;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
