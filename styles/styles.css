@@ -200,13 +200,14 @@ textarea {
     resize: none;
 }
 
-.button-studio:hover,
-.button-studio:focus,
-.button-studio:active {
+.submit-button-modal:hover,
+.submit-button-modal:focus,
+.submit-button-modal:active {
     background-color: var(--button-active);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
 }
 
-.button-studio {
+.submit-button-modal {
     cursor: pointer;
     color: var(--title-primary-fon);
     background-color: var(--accent-color);
@@ -215,18 +216,19 @@ textarea {
     font-size: 16px;
     line-height: 1.8;
     font-Family: 'Roboto', sans-serif;
-    display: inline-block;
-    min-width: 216px;
+    display: flex;
+    min-width: 200px;
     height: 50px;
     border-radius: 4px;
     text-align: center;
-    padding: 10px 32px;
+    padding: 10px 52px;
     border: none;
 
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*****************logo*********************/
 
 .logo {
@@ -888,6 +890,14 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+    color: var(--title-primary-fon);
+    background-color: var(--accent-color);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
+}
+
 .nav-portfolio {
     display: flex;
     justify-content: center;
@@ -903,13 +913,6 @@ header {
     margin-right: 8px;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-    color: var(--title-primary-fon);
-    background-color: var(--accent-color);
-    box-shadow: 0 4px 4px var(--background-color-shadov);
-}
 
 .portfolio {
     display: flex;
