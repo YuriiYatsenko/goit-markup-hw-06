@@ -28,6 +28,7 @@ html {
     --portfolio-animation: rgba(33, 150, 243, 90%);
     --background-color-shadov: rgba(0, 0, 0, 0.25);
     --modal-border-color: rgba(33, 33, 33, 0.2);
+    --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
 body {
@@ -120,7 +121,6 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 528px;
     height: 581px;
 
@@ -160,53 +160,93 @@ img {
     margin-bottom: 12px;
 }
 
-.form-modal {
+/*******FORM-MODAL*******/
+
+form {
     width: 448px;
     margin: auto;
 }
 
-.form-box {
-    display: flex;
-    flex-direction: column;
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--modal-border-color);
+    border-radius: 4px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 138px;
+    border: 1px solid var(--modal-border-color);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+}
+
+.modal-textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: var(--placeholder-color);
+}
+
+.modal-input-group {
     margin-bottom: 10px;
 }
 
-.form-box label {
+.modal-input-group-comment {
+    margin-bottom: 0;
+}
+
+.modal-input-group label,
+.modal-input-group-comment label {
+    display: block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: left;
+    color: var(--title-text-color);
 }
 
-.form-box input {
+.modal-input-icon {
     position: absolute;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 42px;
-    border: 1px solid var(--modal-border-color);
-    border-radius: 4px;
-}
-
-input .form-box-icon {
-    position: relative;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
     fill: var(--fon-logostudio);
 }
 
-textarea {
-    resize: none;
+.modal-input-wrapper {
+    position: relative;
 }
 
-.button-studio:hover,
-.button-studio:focus,
-.button-studio:active {
+.modal-input-group-politic {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-politic-label::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+}
+
+
+.submit-button-modal:hover,
+.submit-button-modal:focus,
+.submit-button-modal:active {
     background-color: var(--button-active);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
 }
 
-.button-studio {
+.submit-button-modal {
     cursor: pointer;
     color: var(--title-primary-fon);
     background-color: var(--accent-color);
@@ -215,18 +255,21 @@ textarea {
     font-size: 16px;
     line-height: 1.8;
     font-Family: 'Roboto', sans-serif;
-    display: inline-block;
-    min-width: 216px;
+    display: flex;
+    min-width: 200px;
     height: 50px;
     border-radius: 4px;
     text-align: center;
-    padding: 10px 32px;
+    padding: 10px 52px;
     border: none;
+    margin: auto;
+    margin-top: 30px;
 
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*****************logo*********************/
 
 .logo {
@@ -888,6 +931,14 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+    color: var(--title-primary-fon);
+    background-color: var(--accent-color);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
+}
+
 .nav-portfolio {
     display: flex;
     justify-content: center;
@@ -903,13 +954,6 @@ header {
     margin-right: 8px;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-    color: var(--title-primary-fon);
-    background-color: var(--accent-color);
-    box-shadow: 0 4px 4px var(--background-color-shadov);
-}
 
 .portfolio {
     display: flex;
@@ -953,7 +997,7 @@ header {
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 0;
-    color: #000000;
+    color: var(--background-color);
 }
 
 .section-title {
