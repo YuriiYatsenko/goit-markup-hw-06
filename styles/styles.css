@@ -225,6 +225,7 @@ form {
     position: relative;
 }
 
+<<<<<<< HEAD
 .modal-input-group-politic {
     display: flex;
     justify-content: center;
@@ -239,6 +240,8 @@ form {
 }
 
 
+=======
+>>>>>>> 8775c65237eee81f494286ae9fe02bb2bd13b7d2
 .submit-button-modal:hover,
 .submit-button-modal:focus,
 .submit-button-modal:active {
