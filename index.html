@@ -324,19 +324,18 @@
                 </div>
             </div>
             <div class="e-mail-input-box">
-                <div>
+                <div class="e-mail-input-boxx">
                     <p class="e-mail-title">Підпишіться на розсилку</p>
                     <form class="form-box-footer">
-                        <label class="form-label"><input class="form-input" type="email" name="email"
-                                placeholder="E-mail" /></label>
+                        <input class="form-input" type="email" name="email-sub" placeholder="E-mail"/>
+                        <button type="submit" class="submit-button">
+                            Підписатися
+                            <svg class="submit-icon" width="24" height="24">
+                                <use href="./images/icons.svg#.iconsend"></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
-                <button type="submit" class="submit-button">
-                    Підписатися
-                    <svg class="submit-icon" width="24" height="24">
-                        <use href="./images/icons.svg#.iconsend"></use>
-                    </svg>
-                </button>
             </div>
         </div>
     </footer>
@@ -388,11 +387,14 @@
                         placeholder="Введіть текст"></textarea>
                 </div>
 
-                <div class="modal-input-group-politic">
-                    <input type="checkbox" name="politic" id="politic" class="">
-                    <label class="modal-politic-label" for="politic">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                <div class="modal-input-group-chek">
+                    <input type="checkbox" name="politic" id="politic" class="modal-politic-chek visually-hidden">
+                    <label class="modal-politic-label" for="politic"><span class="modal-politic-chek2"><svg width="16"
+                                height="16">
+                                <use href="./images/icons.svg#.iconcheck"></use>
+                            </svg></span>Погоджуюся з розсилкою та приймаю<span class="input-direcktion">Умови
+                            договору</span></label>
                 </div>
-
                 <button type="submit" class="submit-button-modal">Відправити</button>
             </form>
         </div>
