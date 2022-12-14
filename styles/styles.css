@@ -267,7 +267,7 @@ label.modal-politic-label {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 
@@ -395,9 +395,7 @@ label.modal-politic-label {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
-    justify-content: center;
     display: flex;
-    align-items: center;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -468,8 +466,7 @@ label.modal-politic-label {
     margin-right: 10px;
     fill: currentColor;
     border-radius: 2px;
-    align-items: center;
-    justify-content: center;
+    display: inline-flex;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -482,8 +479,7 @@ label.modal-politic-label {
     margin-right: 10px;
     fill: currentColor;
     border-radius: 2px;
-    align-items: center;
-    justify-content: center;
+    display: inline-flex;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
