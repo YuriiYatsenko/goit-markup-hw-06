@@ -276,12 +276,12 @@ label.modal-politic-label {
     fill: transparent;
 }
 
-.modal-politic-chek:checked+label>span {
+.modal-politic-chek:checked + label > span {
     border: none;
     background-color: var(--accent-color);
 }
 
-.modal-politic-chek:checked+label> span svg {
+.modal-politic-chek:checked + label> span svg {
     fill: var(--title-primary-fon)
 }
 
