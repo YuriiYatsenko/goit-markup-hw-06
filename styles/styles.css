@@ -178,6 +178,10 @@ form {
     padding-left: 42px;
     cursor: pointer;
     outline: none;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -187,8 +191,8 @@ form {
     border-color: var(--accent-color)
 }
 
-.modal-input:hover ~ svg,
-.modal-input:focus ~ svg {
+.modal-input:hover~svg,
+.modal-input:focus~svg {
     fill: #188CE8;
 }
 
@@ -201,6 +205,10 @@ form {
     resize: none;
     cursor: pointer;
     outline: none;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea::placeholder {
@@ -236,6 +244,10 @@ form {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-wrapper {
@@ -276,12 +288,12 @@ label.modal-politic-label {
     fill: transparent;
 }
 
-.modal-politic-chek:checked + label > span {
+.modal-politic-chek:checked+label>span {
     border: none;
     background-color: var(--accent-color);
 }
 
-.modal-politic-chek:checked + label> span svg {
+.modal-politic-chek:checked+label>span svg {
     fill: var(--title-primary-fon)
 }
 
@@ -907,6 +919,7 @@ footer {
     line-height: 1.2;
     margin-bottom: 20px;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .form-input-box {
