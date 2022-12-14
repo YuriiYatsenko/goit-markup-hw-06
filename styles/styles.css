@@ -281,7 +281,7 @@ label.modal-politic-label {
     background-color: var(--accent-color);
 }
 
-.modal-politic-chek:checked+label>span svg {
+.modal-politic-chek:checked+label> span svg {
     fill: var(--title-primary-fon)
 }
 
@@ -296,6 +296,7 @@ label.modal-politic-label {
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .submit-button-modal:hover,
