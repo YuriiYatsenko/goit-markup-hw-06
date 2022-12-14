@@ -122,7 +122,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
+    width: 530px;
     height: 581px;
 
     border-radius: 4px;
@@ -198,13 +198,14 @@ form {
 
 .modal-textarea {
     width: 100%;
-    height: 138px;
+    height: 120px;
     border: 1px solid var(--modal-border-color);
     border-radius: 4px;
     padding: 12px 16px;
     resize: none;
     cursor: pointer;
     outline: none;
+    margin-bottom: 20px;
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -220,7 +221,7 @@ form {
 }
 
 .modal-input-group {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .modal-input-group-comment {
@@ -266,7 +267,7 @@ label.modal-politic-label {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-top:18px;
+    margin-bottom:30px;
 }
 
 
@@ -282,9 +283,6 @@ label.modal-politic-label {
     cursor: pointer;
 }
 
-.modal-input-group-chek {
-    margin-top: 20px;
-}
 
 .modal-politic-chek2 svg {
     fill: transparent;
@@ -337,7 +335,6 @@ label.modal-politic-label {
     padding: 10px 52px;
     border: none;
     margin: auto;
-    margin-top: 30px;
 
     transition-property: background-color;
     transition-duration: 250ms;
