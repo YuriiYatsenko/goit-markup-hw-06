@@ -327,7 +327,8 @@
                 <form class="form-sub">
                     <label class="email-sub-lable" for="email-sub">Підпишіться на розсилку</label>
                     <div class="form-input-box">
-                        <input class="form-input" type="email" name="email-sub" placeholder="E-mail" required/>
+                        <input class="form-input" type="email" name="email-sub" id="email-sub" placeholder="E-mail"
+                            required />
                         <button type="submit" class="form-button">Підписатися
                             <svg class="form-submit-icon" width="24" height="24">
                                 <use href="./images/icons.svg#.iconsend"></use>
@@ -347,9 +348,9 @@
                     <use href="./images/icons.svg#.iconclose-modal"></use>
                 </svg>
             </button>
-            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 
             <form>
+                <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
                 <div class="modal-input-group">
                     <label for="name">Ім'я</label>
                     <div class="modal-input-wrapper">
@@ -388,11 +389,10 @@
                 </div>
 
                 <div class="modal-input-group-chek">
-                    <input type="checkbox" name="politic" id="politic" class="modal-politic-chek visually-hidden">
-                    <label class="modal-politic-label" for="politic"><span class="modal-politic-chek2"><svg width="16"
-                                height="16">
-                                <use href="./images/icons.svg#.iconcheck"></use>
-                            </svg></span>Погоджуюся з розсилкою та приймаю <a class="input-direcktion">Умови
+                    <!--visually-hidden-->
+                    <label class="modal-politic-label" for="politic"><input type="checkbox" name="politic" id="politic"
+                            class="checkbox"><span class="modal-chek"></span>Погоджуюся з
+                        розсилкою та приймаю <a class="input-direcktion">Умови
                             договору</a></label>
                 </div>
                 <button type="submit" class="submit-button-modal">Відправити</button>

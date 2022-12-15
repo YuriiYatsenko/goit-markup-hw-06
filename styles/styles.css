@@ -30,6 +30,7 @@ html {
     --modal-border-color: rgba(33, 33, 33, 0.2);
     --placeholder-color: rgba(117, 117, 117, 0.5);
     --footer-placeholder-color: rgba(255, 255, 255, 0.6);
+    --modal-input-direcktion-color: rgba(33, 150, 243, 1);
 }
 
 body {
@@ -124,6 +125,7 @@ img {
     left: 50%;
     width: 530px;
     height: 581px;
+    padding: 40px;
 
     border-radius: 4px;
     background-color: var(--title-primary-fon);
@@ -139,13 +141,15 @@ img {
 }
 
 .modal-btn {
+    position: absolute;
+    top: 1.5%;
+    left: 93%;
     width: 30px;
     height: 30px;
     background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin: 8px 8px 2px 490px;
 }
 
 .modal-btn:hover,
@@ -163,11 +167,6 @@ img {
 
 /*******FORM-MODAL*******/
 
-form {
-    width: 448px;
-    margin: auto;
-}
-
 .modal-input {
     width: 100%;
     height: 40px;
@@ -179,7 +178,6 @@ form {
     cursor: pointer;
     outline: none;
 
-    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -207,7 +205,6 @@ form {
     outline: none;
     margin-bottom: 20px;
 
-    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -247,7 +244,6 @@ form {
     left: 12px;
     transform: translateY(-50%);
 
-    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -259,7 +255,7 @@ form {
 /*******************************************/
 
 
-label.modal-politic-label {
+.modal-politic-label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,38 +263,28 @@ label.modal-politic-label {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    color: rgba(117, 117, 117, 1);
 }
 
 
-.modal-politic-chek2 {
+.modal-chek {
+    display: inline-block;
     width: 16px;
     height: 16px;
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }
 
-
-.modal-politic-chek2 svg {
-    fill: transparent;
+.checkbox:checked + .modal-chek {
+    border-color: transparent;
+    background-image: url(..//images/chek1.svg);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.modal-politic-chek:checked+label>span {
-    border: none;
-    background-color: var(--accent-color);
-}
-
-.modal-politic-chek:checked+label>span svg {
-    fill: var(--title-primary-fon)
-}
-
-
-
 /*****************************************/
 
 .input-direcktion {
@@ -306,7 +292,7 @@ label.modal-politic-label {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: var(--modal-input-direcktion-color);
     text-decoration-line: underline;
     cursor: pointer;
 }
@@ -397,7 +383,6 @@ label.modal-politic-label {
     padding-bottom: 32px;
     display: flex;
 
-    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -714,7 +699,6 @@ label.modal-politic-label {
     align-items: center;
     color: var(--border-klient-color);
 
-    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -776,7 +760,7 @@ label.modal-politic-label {
     padding: 16px 32px;
     fill: var(--border-klient-color);
 
-    transition-property: fill;
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -880,7 +864,6 @@ footer {
     justify-content: center;
     align-items: center;
 
-    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -934,6 +917,12 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     outline: none;
+    cursor: pointer;
+}
+
+.form-input:focus,
+.form-input:hover {
+    color: var(--footer-placeholder-color);
 }
 
 .form-input::placeholder {
