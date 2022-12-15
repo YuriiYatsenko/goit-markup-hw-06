@@ -271,7 +271,7 @@ img {
 .modal-chek {
     display: inline-flex;
     width: 16px;
-    height: 16px;
+    height: 15px;
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     margin-right: 10px;
@@ -279,7 +279,7 @@ img {
 
 .checkbox:checked + .modal-chek {
     border-color: transparent;
-    background-image: url(../images/chek1.svg);
+    background-image: url(../images/check.svg);
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
