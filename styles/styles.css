@@ -279,7 +279,7 @@ img {
 
 .checkbox:checked + .modal-chek {
     border-color: transparent;
-    background-image: url(..//images/chek1.svg);
+    background-image: url(../images/chek1.svg);
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
